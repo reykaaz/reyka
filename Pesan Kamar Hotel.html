@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Penjualan Kamar Hotel - Produk</title>
+</head>
+<body>
+  <!-- Header -->
+  <div style="background:#004080; color:#fff; padding:20px; text-align:center;">
+    <h1>Limbo Hotel</h1>
+  </div>
+
+  <!-- Menu -->
+  <div style="background:#99ccff; padding:10px; text-align:center;">
+    <a href="index.html" style="margin:0 15px; color:#000; text-decoration:none;">Produk</a> |
+    <a href="transaksi.html" style="margin:0 15px; color:#000; text-decoration:none;">Reservasi</a> |
+    <a href="tentang.html" style="margin:0 15px; color:#000; text-decoration:none;">Tentang/Kontak</a>
+  </div>
+
+  <!-- Marquee -->
+  <marquee style="background:#cce6ff; padding:10px; font-weight:bold;">
+    Promo Spesial: Diskon 20% untuk pemesanan kamar deluxe bulan ini!
+  </marquee>
+
+  <!-- Layout utama -->
+  <div style="display:flex; min-height:400px;">
+    <!-- Left Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Kategori Kamar</h3>
+      <ul>
+        <li>Kamar Standar</li>
+        <li>Kamar Deluxe</li>
+        <li>Suite</li>
+      </ul>
+    </div>
+
+    <!-- Content -->
+    <div style="background:#f2f9ff; width:60%; padding:15px; text-align:center;">
+      <h2>Daftar Kamar</h2>
+      <div>
+        <img src="kamar standar.jpeg" alt="Kamar Standar" />
+        <p><b>Kamar Standar</b></p>
+        <p>Harga: Rp 500.000 / malam</p>
+        <p><a href="transaksi.html">Pesan Sekarang</a></p>
+      </div>
+      <hr />
+      <div>
+        <img src="kamar deluxe.jpeg" alt="Kamar Deluxe" />
+        <p><b>Kamar Deluxe</b></p>
+        <p>Harga: Rp 750.000 / malam</p>
+        <p><a href="transaksi.html">Pesan Sekarang</a></p>
+      </div>
+      <hr />
+      <div>
+        <img src="kamar suite.jpeg" alt="Suite" />
+        <p><b>Suite</b></p>
+        <p>Harga: Rp 1.200.000 / malam</p>
+        <p><a href="transaksi.html">Pesan Sekarang</a></p>
+      </div>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Info Hotel</h3>
+      <p>Check-in: 14.00 WIB</p>
+      <p>Check-out: 12.00 WIB</p>
+      <p>Fasilitas: WiFi, Kolam Renang, Sarapan Gratis</p>
+      <img src="PHOTO-2025-05-29-23-54-10.jpg" alt="Promo" style="width:189px; height:302px;" />
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#004080; color:#fff; padding:10px; text-align:center;">
+    &copy; Limbo Hotel
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reservasi Kamar - Limbo Hotel</title>
+</head>
+<body>
+  <!-- Header -->
+  <div style="background:#004080; color:#fff; padding:20px; text-align:center;">
+    <h1>Limbo Hotel</h1>
+  </div>
+
+  <!-- Menu -->
+  <div style="background:#99ccff; padding:10px; text-align:center;">
+    <a href="index.html" style="margin:0 15px; color:#000; text-decoration:none;">Produk</a> |
+    <a href="transaksi.html" style="margin:0 15px; color:#000; text-decoration:none;">Reservasi</a> |
+    <a href="tentang.html" style="margin:0 15px; color:#000; text-decoration:none;">Tentang/Kontak</a>
+  </div>
+
+  <!-- Marquee -->
+  <marquee style="background:#cce6ff; padding:10px; font-weight:bold;">
+    Silakan isi data reservasi dengan lengkap dan benar!
+  </marquee>
+
+  <!-- Layout utama -->
+  <div style="display:flex; min-height:400px;">
+    <!-- Left Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Bantuan</h3>
+      <p>Hubungi: 0821-1278-4143</p>
+      <p>Email: cs@LimboHotel.com</p>
+    </div>
+
+    <!-- Content -->
+    <div style="background:#f2f9ff; width:60%; padding:15px;">
+      <h2>Form Reservasi Kamar</h2>
+      <form>
+        <label>Nama Lengkap:</label><br />
+        <input type="text" name="nama" required /><br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" name="email" required /><br /><br />
+
+        <label>Nomor Telepon:</label><br />
+        <input type="tel" name="telp" required /><br /><br />
+
+        <label>Pilih Kamar:</label><br />
+        <select name="kamar" required>
+          <option value="">--Pilih Kamar--</option>
+          <option value="standar">Kamar Standar</option>
+          <option value="deluxe">Kamar Deluxe</option>
+          <option value="suite">Suite</option>
+        </select><br /><br />
+
+        <label>Tanggal Check-in:</label><br />
+        <input type="date" name="checkin" required /><br /><br />
+
+        <label>Tanggal Check-out:</label><br />
+        <input type="date" name="checkout" required /><br /><br />
+
+        <label>Jumlah Kamar:</label><br />
+        <input type="number" name="jumlah" min="1" required /><br /><br />
+
+        <input type="submit" value="Kirim Reservasi" />
+      </form>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Info Pembayaran</h3>
+      <p>Transfer ke Bank BCA 0084-231-459</p>
+      <p>Atas Nama: Reika Ananta </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#004080; color:#fff; padding:10px; text-align:center;">
+    &copy; 2025 Limbo Hotel
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tentang & Kontak - Limbo Hotel</title>
+</head>
+<body>
+  <!-- Header -->
+  <div style="background:#004080; color:#fff; padding:20px; text-align:center;">
+    <h1>Limbo Hotel</h1>
+  </div>
+
+  <!-- Menu -->
+  <div style="background:#99ccff; padding:10px; text-align:center;">
+    <a href="index.html" style="margin:0 15px; color:#000; text-decoration:none;">Produk</a> |
+    <a href="transaksi.html" style="margin:0 15px; color:#000; text-decoration:none;">Reservasi</a> |
+    <a href="tentang.html" style="margin:0 15px; color:#000; text-decoration:none;">Tentang/Kontak</a>
+  </div>
+
+  <!-- Marquee -->
+  <marquee style="background:#cce6ff; padding:10px; font-weight:bold;">
+    Hubungi kami untuk informasi lebih lanjut!
+  </marquee>
+
+  <!-- Layout utama -->
+  <div style="display:flex; min-height:400px;">
+    <!-- Left Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Alamat Hotel</h3>
+      <p>Jl. Dipatiukur No. 123, Bandung</p>
+    </div>
+
+    <!-- Content -->
+    <div style="background:#f2f9ff; width:60%; padding: 8px; text-align:center;">
+      <h2>Tentang Kami</h2>
+      <p>Hotel Mewah Bandung menyediakan akomodasi nyaman dengan layanan terbaik untuk Anda.</p>
+      <h3>Kontak Kami</h3>
+      <img src="PHOTO-2025-05-29-23-33-21.jpg" alt="Foto Pemilik" style="width:113px; height:113px; border-radius:8px; display:block; margin:10px auto 0;" />
+      <b>Nama:</b> Reika Ananta<br />
+      <b>Email:</b> <a href="Reika.ananta24@email.com">Reika.ananta24@email.com</a><br />
+      <b>Telepon:</b> 0821-2238-5758
+    </div>
+
+    <!-- Right Sidebar -->
+    <div style="background:#e6f0ff; width:20%; padding:15px;">
+      <h3>Jam Operasional</h3>
+      <p>Senin - Minggu<br />24 Jam</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#004080; color:#fff; padding:10px; text-align:center;">
+    &copy; 2025 Limbo Hotel
+  </div>
+</body>
+</html>
